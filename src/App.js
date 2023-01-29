@@ -21,6 +21,11 @@ export default function App() {
 					<HocHoverCounter />
 				</div>
 			</div>
+			<div className="message-div">
+				So, if the counter logic had to be changed from incrementing to decrementing or any other arithmetic operation, when using HOC I would have to change that logic only once without having to worry about the number of components.
+				<br />
+				But, when not using HOC's we'd need to update the logic in each counter component.
+			</div>
 		</div>
 	);
 }
