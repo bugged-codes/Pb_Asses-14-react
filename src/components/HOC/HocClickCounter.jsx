@@ -1,13 +1,13 @@
 import React from "react";
 import LogicCounter from "./LogicCounter";
 
-const HocClickCounter = (newCount, newIncrement) => {
+const HocClickCounter = (props) => {
 	// const [newCount, newIncrement] = this.props;
 	return (
 		<div className="hocCounter clickCounter">
 			<center>
-				<h3>{newCount.newVar}</h3>
-				<button onClick={newIncrement.HandleIncrement}>Click to Increment by 1</button>
+				<h3>{props.newVar}</h3>
+				<button onClick={props.handleIncrement}>Click to Increment by 1</button>
 			</center>
 		</div>
 	);
